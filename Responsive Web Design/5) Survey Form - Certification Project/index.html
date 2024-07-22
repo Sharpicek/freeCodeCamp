@@ -1,0 +1,45 @@
+<!-- Certification Project - Survey Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a freeCodeCamp project app for first my curriculum certification</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label" for="number">Number: <input id="number" type="number" min="18" max="100" placeholder="You can enter number here"></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Select from dropdown
+          <select id="dropdown" name="dropdown">
+            <option value="1">Option number one</option>
+            <option value="2">Option number two</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Select one option</legend>
+        <label for="radio-one"><input id="radio-one" type="radio" name="radio" value="1" checked>Radio one</label>
+        <label for="radio-two"><input id="radio-teo" type="radio" name="radio" value="2">Radio two</label>
+      </fieldset>
+      <fieldset>
+        <label for="chck-one">Checkbox one <input id="chck-one" type="checkbox" value="1">
+        <label for="chck-two">Checkbox one <input id="chck-two" type="checkbox" value="2">
+        <label for="chck-three">Checkbox one <input id="chck-three" type="checkbox" value="3">
+        <label for="chck-four">Checkbox one <input id="chck-four" type="checkbox" value="4">
+      </fieldset>
+      <fieldset>
+        <label for="textarea">Other stuff: <textarea id="textarea" placeholder="Write something here..." rows="3" cols="20"></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
