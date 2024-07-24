@@ -1,0 +1,45 @@
+/* Learn CSS Flexbox by Building a Photo Gallery */ 
+
+* {
+    box-sizing: border-box; /* box se přizpůsobí velikosti svého borderu */
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f6f7;
+}
+  
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+  
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* pokud se nevejdou na stránku, půjdou na další řádku/sloupec, podle flex-direction, nowrap je default */         
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+  
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover; /* obrázky mají různé ratio rozměrů, které se díky tomuto zachová a místo toho budou oříznuté */
+    border-radius: 10px;
+}
+  
+.gallery::after { /* vytvoří prázdný box na konci řady, tzn. poslední item nebude uprostřed, ale nalevo v tomto případě */
+    content: "";
+    width: 350px;
+}
