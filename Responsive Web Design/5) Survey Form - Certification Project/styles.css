@@ -31,11 +31,11 @@ label {
 
 fieldset.checkbox-container {
     text-align: center;
+    padding-top: 10px;
 }
 
 label.checkbox {
-    display: inline-block;
-    padding-top: 5px;
+    display: inline;
 }
 
 input,
