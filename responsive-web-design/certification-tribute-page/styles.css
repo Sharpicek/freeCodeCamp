@@ -1,0 +1,65 @@
+/* Second Certification Project: Tribute Page 
+I don't like, that I used IDs most of the time, but it was part of the assignment */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+#main {
+    margin: 20px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+  
+#title {
+    margin: 20px;
+}
+  
+h1 + p {
+    margin: 15px;
+}
+  
+#img-div {
+    background-color: white;
+}
+  
+#image {
+    margin: 15px auto;
+    max-width: 100%;
+    display: block;
+    padding-top: 15px;
+}
+  
+#img-caption {
+    padding-bottom: 15px;
+}
+  
+#footer {
+    margin: 40px 15px 15px 15px;
+}
+  
+#tribute-info {
+    max-width: 400px;
+    margin: 15px auto 0;
+    padding: 0 15px;
+}
+  
+ul li {
+    text-align: left;
+    margin-bottom: 15px;
+}
+  
+#tribute-info p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+  
+a {
+    text-decoration: none;
+}
